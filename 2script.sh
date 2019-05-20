@@ -5,7 +5,7 @@ sed "4 d" data1.csv > data11.csv
 sed "1 d" data2.csv > data22.csv
 ##
 ### Imprime el número de la fila en la primera columna
-awk '{ print FNR "," $0 }' data111.csv > salida1.csv
+awk '{ print FNR "," $0 }' data11.csv > salida1.csv
 awk '{ print FNR "," $0 }' data22.csv > salida2.csv
 awk '{ print FNR "," $0 }' data3.csv > salida3.csv
 ##
