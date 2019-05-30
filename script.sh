@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ##Laboratorio 2
 ###Elimina la cuarta línea del data1 (No tiene información)
 sed "4 d" data1.csv > data11.csv
@@ -21,3 +22,6 @@ rm data22.csv
 
 #imprime los data* y pega los 3 archivos, luego quita el espacio vacio y al final vuelve la última cfila en columnas.
 ls data* | xargs awk '$1!=""{print FILENAME,$0}' OFS=',' | sed 's/[[:space:]]\+/,/g' | awk -F',' '{for (i=4 ; i<=NF; i++) {print $1,$2,$3,$i}}' OFS=','
+=======
+# Escriba su código aquí
+>>>>>>> parent of 6fcaabc... Update script.sh
